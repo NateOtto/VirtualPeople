@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Sign Language Tutor</title>
+	<script src="https://aframe.io/releases/1.0.1/aframe.min.js"></script>
+	<script src="https://nate-otto.net/AFRAME/scripts/animation-mixer.js"></script>
+</head>
+<body>
+	<a-scene>
+		<a-assets>
+			<a-asset-item id="school" src="/SignLanguageSchool.gltf"></a-asset-item>
+			<a-asset-item id="teacher" src="/kyle.gltf"></a-asset-item>
+		</a-assets>
+		<a-entity gltf-model="#school"></a-entity>
+		<a-entity gltf-model="#teacher" rotation="90 0 0" position="0 9.33 -2" animation-mixer></a-entity>
+		<a-light type="point" position="1 2 0" intensity="0.75"></a-light>
+		<a-light type="ambient" intensity="0.5"></a-light>
+	</a-scene>
+</body>
+</html>
